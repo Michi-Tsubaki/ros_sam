@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+  <arg name="cuda" default="cpu"/>
+  <arg name="model" default="vit_h"/>
+  <node pkg="ros_sam" type="sam_node.py" name="ros_sam" output="screen">
+    <param name="model" value="$(arg model)"/>
+    <param name="cuda" value="$(arg cuda)" />
+  </node>
+</launch>
