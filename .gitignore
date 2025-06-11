@@ -3,5 +3,5 @@ __pycache__/
 *$py.class
 
 # Ignore downloaded models
-models/*
-!models/.gitkeep
+ros_sam/models/*
+ros_sam/!models/.gitkeep
